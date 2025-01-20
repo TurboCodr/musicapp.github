@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Composer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Music Composer</h1>
+    <div id="controls">
+      <button id="play">Play</button>
+      <button id="save">Save MIDI</button>
+      <button id="clear">Clear</button>
+      <label for="tempo">Tempo:</label>
+      <input type="number" id="tempo" value="120" min="60" max="240">
+      <label for="instrument">Instrument:</label>
+      <select id="instrument">
+        <option value="0">Piano</option>
+        <option value="1">Guitar</option>
+        <option value="2">Violin</option>
+        <option value="3">Flute</option>
+      </select>
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    <div id="grid"></div>
+    <div id="size-controls">
+      <label for="width">Grid Width:</label>
+      <input type="number" id="width" value="16" min="8" max="64">
+      <label for="height">Grid Height:</label>
+      <input type="number" id="height" value="12" min="6" max="24">
+      <button id="resize">Resize Grid</button>
+    </div>
+    <div id="transpose-controls">
+      <label for="transpose">Transpose:</label>
+      <input type="number" id="transpose" value="0" min="-12" max="12">
+      <button id="apply-transpose">Apply Transpose</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
