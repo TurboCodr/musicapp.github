@@ -1,0 +1,33 @@
+/* Added styles for transpose controls and playback indicator */
+
+#transpose-controls {
+  margin-top: 10px;
+}
+
+#transpose-controls button {
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 4px;
+}
+
+#transpose-controls button:hover {
+  background-color: #138496;
+}
+
+.cell.playback {
+  animation: playback 0.5s ease-in-out;
+  background-color: orange !important;
+}
+
+@keyframes playback {
+  0% {
+    background-color: orange;
+  }
+  100% {
+    background-color: #007BFF;
+  }
+}
